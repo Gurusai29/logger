@@ -1,0 +1,10 @@
+{
+  message: 'user to test-logger',
+  level: 'info',
+  timestamp: '2020-10-27T05:06:29.127Z'
+}
+{
+  message: 'user to test-logger',
+  level: 'info',
+  timestamp: '2020-10-27T05:12:01.015Z'
+}
