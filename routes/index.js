@@ -4,16 +4,16 @@ var router = express.Router();
 var logger = require('../logger')
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-  logger.info('user to test-logger')
+router.get('/', function (req, res) {
+  logger.info('user to test-logger');
   res.render('index', { title: 'Express' });
 });
 
 router.get('/form', function (req, res) {
   try {
-    logger.log('info', 'hello world');
+    logger.log('info', req.query);
     if (req.query.id === 1) {
-      logger.info(`${req.query.id}`);
+      logger.info(`${req.query.id}`);   
       return;
     } else {
       logger.error('invalid input')
